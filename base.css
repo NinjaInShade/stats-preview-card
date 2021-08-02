@@ -1,6 +1,5 @@
 * {
-  font-family: 'Lexend Deca', sans-serif;
-  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Inter', sans-serif;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -22,5 +21,33 @@
   --transparent-white-2: hsla(0, 0%, 100%, 0.6);
 
   /* Typography */
+  --h1: 38px;
+  --h2: 26px;
   --body: 15px;
+  --body-small: 12px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  padding: 30px;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --h1: 32px;
+    --h2: 22px;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --h1: 22px;
+    --h2: 18px;
+    --body: 12px;
+    --body-small: 10px;
+  }
 }
